@@ -1,0 +1,9 @@
+name: Build
+on: push
+jobs: 
+  deploy:
+   - uses: actions/checkout@3v
+   - uses: actions/upload-artifacts@3v
+      with:
+        name: app
+        path: public
