@@ -1,9 +1,11 @@
 name: Build
 on: push
 jobs: 
-  deploy: windows-latest
-   - uses: actions/checkout@3v
-   - uses: actions/upload-artifact@3v
-      with:
-        name: app
-        path: public
+  deploy:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@3v
+    - uses: actions/upload-artifact@3v
+        with:
+          name: app
+          path: public
