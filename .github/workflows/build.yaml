@@ -1,7 +1,7 @@
 name: Build
 on: push
 jobs: 
-  deploy:
+  deploy: windows-latest
    - uses: actions/checkout@3v
    - uses: actions/upload-artifacts@3v
       with:
