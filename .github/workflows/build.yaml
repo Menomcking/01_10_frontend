@@ -3,7 +3,7 @@ on: push
 jobs: 
   deploy: windows-latest
    - uses: actions/checkout@3v
-   - uses: actions/upload-artifacts@3v
+   - uses: actions/upload-artifact@3v
       with:
         name: app
         path: public
