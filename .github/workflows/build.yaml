@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@3v
     - uses: actions/upload-artifact@3v
-        with:
-          name: app
-          path: public
+      with:
+        name: app
+        path: public
